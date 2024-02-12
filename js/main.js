@@ -57,3 +57,44 @@ function calculateRectangleArea() {
   // Return the Result
   return area;
 }
+
+
+
+// Calculate parallelogram Area
+function calculateParallelogramArea() {
+  // Get The parallelogram Width
+  const parallelogramBased = getInput("parallelogram-based");
+
+  // Get The parallelogram Height
+  const parallelogramheight = getInput("parallelogram-height");
+
+  // Get The parallelogram Area
+  const parallelogramArea = parallelogramBased * parallelogramheight;
+
+  // Display The parallelogram Area Result
+  const area = elementResult("parallelogram-area", parallelogramArea);
+
+  // Return the Result
+  return area;
+}
+
+
+// Calculate Rhombus Area
+function calculateRhombusArea() {
+  // Get The Rhombus Width
+  const rhombusD1 = getInput("rhombus-d1");
+
+  // Get The Rhombus Height
+  const rhombusD2 = getInput("rhombus-d2");
+
+  // Get The Rhombus Area
+  const rhombusArea = 0.5 * rhombusD1 * rhombusD2;
+
+  // Display The Rhombus Area Result
+  const area = elementResult("rhombus-area", rhombusArea);
+
+  // Return the Result
+  return area;
+}
+
+

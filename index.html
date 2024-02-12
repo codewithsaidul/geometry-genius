@@ -77,8 +77,8 @@
 
                     <!-- ================== Rectangle Start  ==================== -->
                     <div class="card w-80 bg-base-100 shadow-[0_4px_8px_0px_rgba(0,0,0,0.2)]">
-                        <figure class="pt-3">
-                            <img src="./images/rectangle.png" class="w-52" alt="Shoes" />
+                        <figure class="pt-3 px-4">
+                            <img src="./images/rectangle.png" alt="Shoes" />
                         </figure>
                         <div class="card-body text-center space-y-3">
                             <h2 class="text-3xl text-primary-color font-bold">Rectangle!</h2>
@@ -106,7 +106,75 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ================== Rectangle  End ==================== -->
+                    <!-- ================== Rectangle End ==================== -->
+
+
+                    <!-- ================== Parallelogram Start  ==================== -->
+                    <div class="card w-80 bg-base-100 shadow-[0_4px_8px_0px_rgba(0,0,0,0.2)]">
+                        <figure class="pt-3">
+                            <img src="./images/parallelogram.png" class="w-52" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center space-y-3">
+                            <h2 class="text-3xl text-primary-color font-bold">Parallelogram!</h2>
+                            <p class="text-lg font-normal text-second-color">Area (A) = b X h</p>
+
+                            <div class="flex gap-x-2 items-center">
+                                <input type="text"
+                                    class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
+                                    placeholder="Based" id="parallelogram-based">
+                                <span class="text-sm text-primary-color">cm</span>
+                                <input type="text"
+                                    class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
+                                    placeholder="Height" id="parallelogram-height">
+                                <span class="text-sm text-primary-color">cm</span>
+                            </div>
+
+                            <div>
+                                <p class="text-xl font-semibold text-second-color">
+                                    Parallelogram Area : <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span>
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn w-full bg-primary-color text-white text-xl font-medium hover:bg-second-color hover:text-gray-800 transition-all ease-in-out duration-1000" onclick="calculateParallelogramArea()">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================== Parallelogram End ==================== -->
+
+
+                    <!-- ================== Rhombus Start  ==================== -->
+                    <div class="card w-80 bg-base-100 shadow-[0_4px_8px_0px_rgba(0,0,0,0.2)]">
+                        <figure class="pt-3">
+                            <img src="./images/rhombus.png" class="w-52" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center space-y-3">
+                            <h2 class="text-3xl text-primary-color font-bold">Rhombus!</h2>
+                            <p class="text-lg font-normal text-second-color">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+
+                            <div class="flex gap-x-2 items-center">
+                                <input type="text"
+                                    class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
+                                    placeholder="D1" id="rhombus-d1">
+                                <span class="text-sm text-primary-color">cm</span>
+                                <input type="text"
+                                    class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
+                                    placeholder="D2" id="rhombus-d2">
+                                <span class="text-sm text-primary-color">cm</span>
+                            </div>
+
+                            <div>
+                                <p class="text-xl font-semibold text-second-color">
+                                    Rhombus Area : <span id="rhombus-area"></span> <span>cm<sup>2</sup></span>
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn w-full bg-primary-color text-white text-xl font-medium hover:bg-second-color hover:text-gray-800 transition-all ease-in-out duration-1000" onclick="calculateRhombusArea()">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================== Rhombus End ==================== -->
 
 
                 </div>
