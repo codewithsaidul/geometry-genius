@@ -53,17 +53,17 @@
                             <div class="flex gap-x-2 items-center">
                                 <input type="text"
                                     class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
-                                    placeholder="b" id="triangle-base">
+                                    placeholder="Based" id="triangle-base">
                                 <span class="text-sm text-primary-color">cm</span>
                                 <input type="text"
                                     class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
-                                    placeholder="h" id="triangle-height">
+                                    placeholder="Height" id="triangle-height">
                                 <span class="text-sm text-primary-color">cm</span>
                             </div>
 
                             <div >
                                 <p class="text-xl font-semibold text-second-color">
-                                    Area : <span id="triangle-area"></span> <span>cm<sup>2</sup></span>
+                                    Triangle Area : <span id="triangle-area">0</span> <span>cm<sup>2</sup></span>
                                 </p>
                             </div>
 
@@ -82,59 +82,32 @@
                         </figure>
                         <div class="card-body text-center space-y-3">
                             <h2 class="text-3xl text-primary-color font-bold">Rectangle!</h2>
-                            <p class="text-lg font-normal text-second-color">Area = w X l</p>
+                            <p class="text-lg font-normal text-second-color">Area = w X h</p>
 
                             <div class="flex gap-x-2 items-center">
                                 <input type="text"
                                     class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
-                                    placeholder="w" id="triangle-base">
+                                    placeholder="Width" id="rectangle-width">
                                 <span class="text-sm text-primary-color">cm</span>
                                 <input type="text"
                                     class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
-                                    placeholder="l" id="triangle-height">
+                                    placeholder="Height" id="rectangle-height">
                                 <span class="text-sm text-primary-color">cm</span>
                             </div>
 
-                            <div >
+                            <div>
                                 <p class="text-xl font-semibold text-second-color">
-                                    Area : <span id="triangle-area"></span> <span>cm<sup>2</sup></span>
+                                   Rectangle Area : <span id="rectangle-area"></span> <span>cm<sup>2</sup></span>
                                 </p>
                             </div>
 
                             <div class="card-actions">
-                                <button class="btn w-full bg-primary-color text-white text-xl font-medium hover:bg-second-color hover:text-gray-800 transition-all ease-in-out duration-1000" onclick="calculateTriangleArea()">Calculate</button>
+                                <button class="btn w-full bg-primary-color text-white text-xl font-medium hover:bg-second-color hover:text-gray-800 transition-all ease-in-out duration-1000" onclick="calculateRectangleArea()">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <!-- ================== Rectangle  End ==================== -->
 
-                    <!-- ================== Triange Start 2 ==================== -->
-                    <div class="card w-80 bg-base-100 shadow-xl">
-                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ================== Triange  End ==================== -->
-
-                    <!-- ================== Triange Start 3 ==================== -->
-                    <div class="card w-80 bg-base-100 shadow-xl">
-                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ================== Triange  End ==================== -->
 
                 </div>
                 <!-- ============ Shape Card Container End ================= -->
