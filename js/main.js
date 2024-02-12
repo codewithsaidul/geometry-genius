@@ -98,3 +98,23 @@ function calculateRhombusArea() {
 }
 
 
+
+// Calculate Pentagon Area
+function calculatePentagonArea() {
+  // Get The Pentagon Width
+  const pentagonP = getInput("pentagon-p");
+
+  // Get The Pentagon Height
+  const pentagonBase = getInput("pentagon-base");
+
+  // Get The Pentagon Area
+  const pentagonArea = 0.5 * pentagonP * pentagonBase;
+
+  // Display The Pentagon Area Result
+  const area = elementResult("pentagon-area", pentagonArea);
+
+  // Return the Result
+  return area;
+}
+
+
