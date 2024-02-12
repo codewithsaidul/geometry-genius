@@ -25,7 +25,7 @@
     </script>
 </head>
 
-<body>
+<body class="mt-20 mb-40">
 
     <!-- =========================== Header Start ============================== -->
     <!-- =========================== Header End ============================== -->
@@ -49,7 +49,7 @@
                         </figure>
                         <div class="card-body text-center space-y-3">
                             <h2 class="text-3xl text-primary-color font-bold">Triangle!</h2>
-                            <p class="text-lg font-normal text-second-color">Area = 0.5 X b X h</p>
+                            <p class="text-lg font-normal text-second-color">Area (A) = 0.5 X b X h</p>
 
                             <div class="flex gap-x-2 items-center">
                                 <input type="text"
@@ -83,7 +83,7 @@
                         </figure>
                         <div class="card-body text-center space-y-3">
                             <h2 class="text-3xl text-primary-color font-bold">Rectangle!</h2>
-                            <p class="text-lg font-normal text-second-color">Area = w X h</p>
+                            <p class="text-lg font-normal text-second-color">Area (A) = w X h</p>
 
                             <div class="flex gap-x-2 items-center">
                                 <input type="text"
@@ -180,6 +180,40 @@
                     <!-- ================== Pentagon Start  ==================== -->
                     <div class="card w-80 md:w-96 bg-base-100 shadow-[0_4px_8px_0px_rgba(0,0,0,0.2)]">
                         <figure class="pt-3">
+                            <img src="./images/pentagon.png" class="w-52" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center space-y-3">
+                            <h2 class="text-3xl text-primary-color font-bold">Pentagon!</h2>
+                            <p class="text-lg font-normal text-second-color">Area (A) = 0.5 X p X b</p>
+
+                            <div class="flex gap-x-2 items-center">
+                                <input type="text"
+                                    class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
+                                    placeholder="P" id="pentagon-p">
+                                <span class="text-sm text-primary-color">cm</span>
+                                <input type="text"
+                                    class="shadow bg-slate-100 w-24 text-2xl p-2 border-0 outline-none rounded"
+                                    placeholder="Based" id="pentagon-base">
+                                <span class="text-sm text-primary-color">cm</span>
+                            </div>
+
+                            <div>
+                                <p class="text-xl font-semibold text-second-color">
+                                    Pentagon Area : <span id="pentagon-area"></span> <span>cm<sup>2</sup></span>
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn w-full bg-primary-color text-white text-xl font-medium hover:bg-second-color hover:text-gray-800 transition-all ease-in-out duration-1000" onclick="calculatePentagonArea()">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================== Pentagon End ==================== -->
+
+
+                    <!-- ================== Ellipse Start  ==================== -->
+                    <div class="card w-80 md:w-96 bg-base-100 shadow-[0_4px_8px_0px_rgba(0,0,0,0.2)]">
+                        <figure class="pt-3">
                             <img src="./images/ellipse.png" class="w-52" alt="Shoes" />
                         </figure>
                         <div class="card-body text-center space-y-3">
@@ -208,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ================== Pentagon End ==================== -->
+                    <!-- ================== Ellipse End ==================== -->
 
 
                 </div>
