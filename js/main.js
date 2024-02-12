@@ -48,7 +48,7 @@ function calculateRectangleArea() {
   // Get The Rectangle Height
   const rectangleheight = getInput("rectangle-height");
 
-  // Get The Rectangle Area
+  // Calculate The Rectangle Area
   const rectangleArea = rectangleWidth * rectangleheight;
 
   // Display The Rectangle Area Result
@@ -68,7 +68,7 @@ function calculateParallelogramArea() {
   // Get The parallelogram Height
   const parallelogramheight = getInput("parallelogram-height");
 
-  // Get The parallelogram Area
+  // Calculate The parallelogram Area
   const parallelogramArea = parallelogramBased * parallelogramheight;
 
   // Display The parallelogram Area Result
@@ -87,7 +87,7 @@ function calculateRhombusArea() {
   // Get The Rhombus Height
   const rhombusD2 = getInput("rhombus-d2");
 
-  // Get The Rhombus Area
+  // Calculate The Rhombus Area
   const rhombusArea = 0.5 * rhombusD1 * rhombusD2;
 
   // Display The Rhombus Area Result
@@ -107,11 +107,35 @@ function calculatePentagonArea() {
   // Get The Pentagon Height
   const pentagonBase = getInput("pentagon-base");
 
-  // Get The Pentagon Area
+  // Calculate The Pentagon Area
   const pentagonArea = 0.5 * pentagonP * pentagonBase;
 
   // Display The Pentagon Area Result
   const area = elementResult("pentagon-area", pentagonArea);
+
+  // Return the Result
+  return area;
+}
+
+
+
+
+// Calculate Ellipse Area
+function calculateEllipseArea() {
+  // Get The Ellipse Width
+  const ellipseA = getInput("ellipse-a");
+
+  // Get The Ellipse Height
+  const ellipseB = getInput("ellipse-b");
+
+  // Get The Pie 
+  const pie = 3.1416
+
+  // Calculate The Ellipse Area
+  const ellipseArea = pie * ellipseA * ellipseB;
+
+  // Display The Ellipse Area Result
+  const area = elementResult("ellipse-area", ellipseArea);
 
   // Return the Result
   return area;
